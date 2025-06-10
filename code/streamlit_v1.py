@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 from copy import deepcopy
 
-# You'll need to create these classes (Queue.py and Process.py)
-# or define them here
+
 class Queue:
     def __init__(self, queue_id, quantum):
         self.queue_id = queue_id
@@ -28,10 +27,10 @@ class Process:
     def __lt__(self, other):
         return self.arrival_time < other.arrival_time
 
-# Constants
-inf = 10**9
 
-# Initialize session state
+inf = 10**10
+
+
 if 'queue_cnt' not in st.session_state:
     st.session_state.queue_cnt = 0
 if 'queue_list' not in st.session_state:
