@@ -14,7 +14,7 @@ This project implements a simulation of the **Multilevel Feedback Queue (MLFQ)**
 - Simulation of MLFQ with customizable parameters  
 - Real-time visualization of the scheduling sequence  
 - Gantt chart output  
-- Summary of process metrics (waiting time, turnaround time, etc.)
+- Summary of average waiting time.
 
 ## How to Run
 
@@ -22,13 +22,7 @@ Follow these steps to set up and run the application:
 
 ### 1. Install Streamlit
 
-If you're using Jupyter/Colab:
-
-```bash
-!pip install streamlit
-```
-
-Or from your terminal:
+Open your terminal:
 
 ```bash
 pip install streamlit
@@ -47,11 +41,3 @@ streamlit run main.py
 ```
 
 This will open the app in your default browser at `http://localhost:8501/`.
-
-## Example Output
-
-> *(You can include a screenshot of the Streamlit interface or Gantt chart here)*
-
-## License
-
-This project was developed for educational purposes as part of the *Parallel and Distributed Programming* course. You are welcome to reuse or adapt it with appropriate credit.
